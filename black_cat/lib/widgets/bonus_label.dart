@@ -29,22 +29,27 @@ class BonusItem extends StatelessWidget {
     final screenHeight = MediaQuery.of(context).size.height;
 
     return Container(
-      margin: EdgeInsets.symmetric(vertical: screenHeight * 0.1),
-      padding: EdgeInsets.all(screenWidth * 0.001), 
+      margin: EdgeInsets.symmetric(vertical: screenHeight * 0.0015),
+      padding: EdgeInsets.all(screenWidth * 0.02), 
       child: Stack(
         children: [
-          // SVG background with adjusted BoxFit and aspect ratio
           Positioned.fill(
             child: Image.asset(
               'assets/images/bonus.png',
-              fit: BoxFit.cover, 
+              fit: BoxFit.fill, 
             ),
           ),
-          Center(
-            child: Text(
-              text,
-              style: TextStylesMain.bonustxt,
-              textAlign: TextAlign.center,
+          Padding(
+            padding: EdgeInsets.symmetric(
+              horizontal: screenWidth * 0.04, 
+              vertical: screenHeight * 0.015, 
+            ),
+            child: Center(
+              child: Text(
+                text,
+                style: TextStylesMain.bonustxt,
+                textAlign: TextAlign.center,
+              ),
             ),
           ),
         ],
