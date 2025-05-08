@@ -1,18 +1,35 @@
-import 'package:black_cat/model/cart-widget.dart';
+import 'package:black_cat/widgets/button_widget.dart';
+import 'package:black_cat/widgets/styletxt.dart';
+import 'package:flutter/material.dart';
 
-class CartCalculator {
-  // Метод для подсчета общей суммы в корзине
-  static int calculateTotal(List<Product> cart) {
-    int total = 0;
-    for (var item in cart) {
-      final priceNum = int.tryParse(item.price.replaceAll(RegExp(r'[^0-9]'), ''));
-      if (priceNum != null) total += priceNum;
-    }
-    return total;
-  }
+class TotalPriceSection extends StatelessWidget {
+  final int totalPrice;
 
-  // Метод для форматирования суммы
-  static String formatTotal(int total) {
-    return total.toString();
+  const TotalPriceSection({
+    super.key,
+    required this.totalPrice,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            const Text(
+              'Итого',
+              style: TextStylesMain.totalPrice,
+            ),
+            Text(
+              '$totalPrice руб',
+             style: TextStylesMain.totalPrice,
+            ),
+          ],
+        ),
+        const SizedBox(height: 10),
+        GradientBorderButton(text: 'Продолжить'),
+      ],
+    );
   }
 }

@@ -49,44 +49,41 @@ class _SplashScreenState extends State<SplashScreen>
         child: Stack(
           alignment: Alignment.center,
           children: [
-            // Круглая картинка (логотип)
             Container(
-              width: 200, // Размер контейнера
-              height: 200,
+              width: 150, 
+              height: 150,
               decoration: BoxDecoration(
-                shape: BoxShape.circle, // Круглая форма
+                shape: BoxShape.circle, 
                 image: DecorationImage(
                   image: AssetImage(
                     'assets/images/logo.png',
-                  ), // Путь к изображению
-                  fit: BoxFit.cover, // Растягиваем изображение
+                  ), 
+                  fit: BoxFit.cover, 
                 ),
               ),
             ),
-
-            // Область для блика (ограничиваем кругом)
             ClipOval(
               child: Container(
-                width: 200,
-                height: 200,
+                width: 150,
+                height: 150,
                 child: AnimatedBuilder(
                   animation: _controller,
                   builder: (context, child) {
                     return Transform.translate(
                       offset: Offset(
-                        0, // Горизонтальное положение (посередине)
-                        _shineAnimation.value * 100, // Вертикальное движение
+                        0, 
+                        _shineAnimation.value * 100, 
                       ),
                       child: Opacity(
-                        opacity: 0.8, // Прозрачность блика
+                        opacity: 0.8, 
                         child: Container(
-                          width: 200, // Ширина блика
-                          height: 50, // Высота блика
+                          width: 200, 
+                          height: 50, 
                           decoration: BoxDecoration(
                             gradient: LinearGradient(
                               colors: [
-                                Colors.white.withOpacity(0.6), // Белый блик
-                                Colors.transparent, // Постепенное исчезновение
+                                Colors.white.withOpacity(0.6),
+                                Colors.transparent, 
                               ],
                               begin: Alignment.topCenter,
                               end: Alignment.bottomCenter,

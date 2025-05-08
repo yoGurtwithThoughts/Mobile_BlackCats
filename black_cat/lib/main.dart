@@ -20,7 +20,8 @@ class MyApp extends StatelessWidget {
         '/': (context) => SplashScreen(),
         '/ad': (context) => AdPage(),
         '/st': (context) => StorePage(onAddToCart: (Product ) {  },),
-        '/cart': (context) => CartPage(cart: [],),
+        '/cart': (context) => CartPage(cartItems: [], onIncrement: (Product ) {  },
+         onRemove: (Product ) {  }, onDecrement: (Product ) {  },),
       },
     );
   }
