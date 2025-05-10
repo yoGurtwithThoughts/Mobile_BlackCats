@@ -34,6 +34,7 @@ class _StorePageState extends State<StorePage> {
           // Main content
           Column(
             children: [
+              SizedBox(height: 25,),
               SortButton(
                 onSelected: (category) {
                   setState(() {

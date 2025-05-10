@@ -31,9 +31,7 @@ class _SortButtonState extends State<SortButton> {
         height: screenHeight * 0.06,
         decoration: BoxDecoration(
           color: Color.fromRGBO(112, 67, 65, 0.3),
-          borderRadius: BorderRadius.vertical(
-            bottom: Radius.circular(screenHeight * 0.03),
-          ),
+          borderRadius: BorderRadius.circular(15),
         ),
         child: Row(
           children: [

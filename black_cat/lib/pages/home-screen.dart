@@ -1,6 +1,7 @@
 import 'package:black_cat/model/cart-widget.dart';
 import 'package:black_cat/pages/ad_page.dart';
 import 'package:black_cat/pages/cart_page.dart';
+import 'package:black_cat/pages/community_pages.dart';
 import 'package:black_cat/pages/store_page.dart';
 import 'package:black_cat/widgets/botom_bar_items.dart';
 import 'package:black_cat/widgets/botom_bar_widget.dart';
@@ -63,6 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
         onDecrement: decrement,
         onRemove: remove,
       ),
+      CommunityPage(),
     ];
 
     return BotomBarWidget(

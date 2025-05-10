@@ -12,8 +12,8 @@ class GradientBorderButton extends StatelessWidget {
     return CustomPaint(
       painter: _GradientBorderPainter(),
       child: SizedBox(
-        width: 340,
-        height: 60,
+        width: 240,
+        height: 40,
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
             backgroundColor: const Color.fromRGBO(247, 255, 188, 0.20),

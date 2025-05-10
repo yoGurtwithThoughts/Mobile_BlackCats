@@ -25,7 +25,7 @@ class _BotomBarWidgetState extends State<BotomBarWidget> {
           right: 0,
           bottom: 0,
           child: Container(
-            height: 75, // Увеличена высота нижней панели
+            height: 55, // Увеличена высота нижней панели
             decoration: BoxDecoration(
               color: Color.fromRGBO(174, 141, 120, 0.25), // Полупрозрачный фон
               borderRadius: const BorderRadius.vertical(

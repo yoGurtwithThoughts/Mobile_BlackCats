@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class TextStylesMain {
   static const TextStyle apptxt = TextStyle(
     fontFamily: 'MainFont',
-    fontSize: 24,
+    fontSize: 15,
     fontWeight: FontWeight.w300,
     color: Color.fromRGBO(248, 228, 190, 1),
   );
@@ -42,5 +42,17 @@ class TextStylesMain {
     fontSize: 15,
     fontWeight: FontWeight.w400,
     color: Color.fromRGBO(218, 187, 158, 1),
+  );
+   static const TextStyle carttxt = TextStyle(
+    fontFamily: 'MainFont',
+    fontSize: 25,
+    fontWeight: FontWeight.w400,
+    color: Color.fromRGBO(218, 187, 158, 1),
+  );
+   static const TextStyle hinttxt = TextStyle(
+    fontFamily: 'MainFont',
+    fontSize: 17,
+    fontWeight: FontWeight.w400,
+    color: Color.fromRGBO(157, 135, 129, 1),
   );
 }

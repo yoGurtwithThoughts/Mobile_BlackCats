@@ -1,3 +1,4 @@
+import 'package:black_cat/pages/booking-page.dart';
 import 'package:black_cat/widgets/button_widget.dart';
 import 'package:black_cat/widgets/styletxt.dart';
 import 'package:flutter/material.dart';
@@ -5,10 +6,7 @@ import 'package:flutter/material.dart';
 class TotalPriceSection extends StatelessWidget {
   final int totalPrice;
 
-  const TotalPriceSection({
-    super.key,
-    required this.totalPrice,
-  });
+  const TotalPriceSection({super.key, required this.totalPrice});
 
   @override
   Widget build(BuildContext context) {
@@ -17,18 +15,20 @@ class TotalPriceSection extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Text(
-              'Итого',
-              style: TextStylesMain.totalPrice,
-            ),
-            Text(
-              '$totalPrice руб',
-             style: TextStylesMain.totalPrice,
-            ),
+            const Text('Итого', style: TextStylesMain.totalPrice),
+            Text('$totalPrice руб', style: TextStylesMain.totalPrice),
           ],
         ),
         const SizedBox(height: 10),
-        GradientBorderButton(text: 'Продолжить'),
+        GradientBorderButton(
+          text: 'Продолжить',
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => BookingPage()),
+            );
+          },
+        ),
       ],
     );
   }

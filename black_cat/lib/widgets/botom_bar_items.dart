@@ -5,7 +5,8 @@ class BottomBarItem {
 }
 
 const List<BottomBarItem> bottomBarItems = [
-  BottomBarItem(iconPath: 'assets/icons/add.svg'), // Главная страница
-  BottomBarItem(iconPath: 'assets/icons/store.svg'), // Поиск
-  BottomBarItem(iconPath: 'assets/icons/cart.svg'), // Профиль
+  BottomBarItem(iconPath: 'assets/icons/add.svg'),
+  BottomBarItem(iconPath: 'assets/icons/store.svg'), 
+  BottomBarItem(iconPath: 'assets/icons/cart.svg'), 
+  BottomBarItem(iconPath: 'assets/icons/community.svg'), 
 ];
