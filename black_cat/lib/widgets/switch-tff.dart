@@ -1,4 +1,4 @@
 
 class AppFonts {
-  static const String regular = 'Bellota-Regular';
+  static const String regular = 'bellota';
 }

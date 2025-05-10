@@ -54,9 +54,9 @@ class CartPage extends StatelessWidget {
                             width: screenWidth * 0.8,
                             height: screenHeight * 0.35,
                             child: Image.asset(
-                              'assets/images/sadcat.png',
+                              'assets/images/SadC.png',
                               fit: BoxFit.fill,
-                              height: 350,
+                              height: 250,
                             ),
                           ),
                           const SizedBox(height: 20),
