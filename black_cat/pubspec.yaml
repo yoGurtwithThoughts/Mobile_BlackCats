@@ -40,6 +40,7 @@ dependencies:
   flutter_svg: ^2.1.0
   flutter_launcher_icons: ^0.14.3
   path_provider: ^2.1.5
+  flutter_staggered_animations: ^1.1.1
 
 dev_dependencies:
   flutter_test:
@@ -88,7 +89,7 @@ flutter_launcher_icons:
   fonts:
    - family: MainFont
      fonts:
-       - asset: assets/fonts/bellota.ttf
+       - asset: assets/fonts/alata.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
