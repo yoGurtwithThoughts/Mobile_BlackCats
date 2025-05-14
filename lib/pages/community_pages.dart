@@ -105,7 +105,7 @@ class _CommunityPageState extends State<CommunityPage> {
                   _animatedBlock(
                     index: 2,
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         const Text('Это интересно', style: TextStylesMain.comtxt),
                         SizedBox(height: screenHeight * 0.025),
